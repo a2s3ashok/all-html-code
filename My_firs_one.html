@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hiddden Himalaya</title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.wraper{
+			background: url(qw.jpg) no-repeat;
+			background-size: cover;
+			height: 100vh;
+		}
+		.navbar{
+			height: 80px;
+			width: 100%;
+			background: rgba(0,0,0,0.4);
+		}
+		.logo{
+			width: 115px;
+			height: auto;
+			padding: 5px 100px;
+		}
+		.navbar ul{
+			float: right;
+			margin-right: 20px; 
+		}
+		.navbar ul li{
+			list-style-type: none;
+			margin: 0 8px;
+			display: inline-block;
+			line-height: 80px;
+		}
+		.navbar ul li a{
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			padding: 6px 13px; 
+			font-family: 'Roboto', sans-serif;
+			transition: .4s;
+		}
+		.navbar ul li a.active,
+		.navbar ul li a:hover{
+			background: skyblue;
+			border-radius: 2px;
+		}
+		.wraper.center{
+			position: absolute;
+			top: 50%;
+			left: 55%;
+			transform: translate(-50% , -50%);
+			font-family: sans-serif;
+			user-select: none;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+<div class="wraper" >
+	<nav class="navbar" >
+		<img class="logo" src="logo.jpg">
+		<ul>
+			<li><a class="active" href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Feedback</a></li>
+		</ul>
+	</nav>
+	<div class="center">
+		<h1>Welcome to demo</h1>
+		<h2>create somthing new</h2>
+		<div class="buttons" >
+			<button>Explore more</button>
+			<button class="btn" >subscribe us</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
